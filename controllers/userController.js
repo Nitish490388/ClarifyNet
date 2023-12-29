@@ -175,11 +175,11 @@ const sendOTP = async (req, res) => {
     const generatedOTP = generateOTP();
 
     await transporter.sendMail({
-      from: '"100xDoubts" <tusharproject00@gmail.com>',
+      from: '"ClarifyNet" <jenanitish490@gmail.com>',
       to: email,
-      subject: "100xDoubts OTP",
+      subject: "ClarifyNet",
       text: `Your OTP for Clarifynet: ${generatedOTP}`,
-      html: `<h1>Your OTP for 100xDoubts: ${generatedOTP}</h1>`,
+      html: `<h1>Your OTP for ClarifyNet: ${generatedOTP}</h1>`,
     });
 
     await Otp.findOneAndUpdate(
