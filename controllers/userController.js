@@ -4,6 +4,7 @@ const Otp = require('../models/otpModel');
 const User = require('../models/userModel');
 const jwt = require('jsonwebtoken');
 const nodemailer = require('nodemailer');
+const bcrypt = require("bcrypt");
 
 
 ///utility functions///
